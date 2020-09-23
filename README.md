@@ -37,6 +37,16 @@ Made a javascript file and made these changes.
 # added one of the characters to the final password string
 
 #  Added an event listener to the generate button  
+• Usage: 
+1-	tps://validator.w3.org/  helps to check and fix the HTML fils
+2-	https://www.w3schools.com/ provides prepared executive codes to safe time for coders.
+
+• Credits:
+Got help Online from : 
+•	https://www.google.com/
+•	https://www.w3schools.com/  
+•	www.YouTube.com  ( https://www.youtube.com/user/codeandcreative )
+ Thanks to John Young my class instructor and Ben Vaagen my TA. special Thank to Dan Mont-Eton my TA , and Amanda Crawford My Tutor for helping me to understand the class and homework contents.
 
 
 
