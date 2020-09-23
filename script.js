@@ -10,7 +10,7 @@ var useSelection = "";
 // created passwordGenerator Function to calculate and create my password?
 function passwordGenerator() {
     var passwordLength = askpasswordlength()
-    askForSelect();
+    askForSelect(passwordLength);
     for (let i = password.length; i < passwordLength; i++) {
 
         password += getrandomCharector(useSelection);
@@ -21,30 +21,33 @@ function passwordGenerator() {
 
 // Created welcome alert
 
-var properlength = false;
+var properlength = false; 
 // created askpasswordlength Function and made a prompt to make sure "users" choose between 8 and 128
 
 var welcome = alert('              <==Welcome to the Password Generator ==>                        <==you can create a uniqe passwork fast and easy in this page==> ');
 
 function askpasswordlength() {
+    var passwordLength= 0;
+    while (passwordLength < 8 || passwordLength > 128) {
+        passwordLength = parseInt( prompt('How many characters do you need in your password? (please choose between 8 to 128 characters)'));
 
-    var pl = prompt('How many characters do you need in your password? (please choose between 8 to 128 characters)');
-    return pl;
+        if ((passwordLength < 8 || passwordLength > 128)) {
+            alert("please choose between 8 to 128 characters!")  
+        } 
+        
+    
+    };
+    return passwordLength;
 }
-var passwordLength = askpasswordlength()
+// var passwordLength = askpasswordlength()
 // created a while loop to keep asking user to follow the direction and chooce between 8 and 128
-while (passwordLength < 8 || passwordLength > 128) {
 
-    alert("please choose between 8 to 128 characters!")
-    passwordLength = askpasswordlength();
-
-};
 
 // created a function to keep users on right path and have mutiple choices to creat there unique password 
-askForSelect ()
-function askForSelect() {
+// askForSelect ()
+function askForSelect(passwordLength) {
   
-    if (passwordLength > 7 || passwordLength < 129) {
+    if (passwordLength > 7 && passwordLength < 129) {
 
         var numbersCh = confirm('Do you like to have number(s) in your password?');
         var lowerCaseCh = confirm('Do you like to have lowercase letter(s) in your password?');
@@ -59,21 +62,21 @@ function askForSelect() {
     };
 
     if (numbersCh) {
-        password += getrandomCharector(numbers)
+        // password += getrandomCharector(numbers)
         useSelection += numbers
     }
     if (lowerCaseCh) {
-        password += getrandomCharector(lowerCase)
+        // password += getrandomCharector(lowerCase)
         useSelection += lowerCase
 
     }
     if (upperCaseCh) {
-        password += getrandomCharector(upperCase)
+        // password += getrandomCharector(upperCase)
         useSelection += upperCase
 
     }
     if (symbolCh) {
-        password += getrandomCharector(symbol)
+        // password += getrandomCharector(symbol)
         useSelection += symbol
 
     }
