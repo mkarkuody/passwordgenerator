@@ -21,21 +21,21 @@ function passwordGenerator() {
 
 // Created welcome alert
 
-var properlength = false; 
+var properlength = false;
 // created askpasswordlength Function and made a prompt to make sure "users" choose between 8 and 128
 
 var welcome = alert('              <==Welcome to the Password Generator ==>                        <==you can create a uniqe passwork fast and easy in this page==> ');
 
 function askpasswordlength() {
-    var passwordLength= 0;
+    var passwordLength = 0;
     while (passwordLength < 8 || passwordLength > 128) {
-        passwordLength = parseInt( prompt('How many characters do you need in your password? (please choose between 8 to 128 characters)'));
+        passwordLength = parseInt(prompt('How many characters do you need in your password? (please choose between 8 to 128 characters)'));
 
-        if ((passwordLength < 8 || passwordLength > 128)) {
-            alert("please choose between 8 to 128 characters!")  
-        } 
-        
-    
+        if (passwordLength < 8 || passwordLength > 128) {
+            alert("please choose between 8 to 128 characters!")
+        }
+
+
     };
     return passwordLength;
 }
@@ -46,7 +46,7 @@ function askpasswordlength() {
 // created a function to keep users on right path and have mutiple choices to creat there unique password 
 // askForSelect ()
 function askForSelect(passwordLength) {
-  
+
     if (passwordLength > 7 && passwordLength < 129) {
 
         var numbersCh = confirm('Do you like to have number(s) in your password?');
@@ -58,7 +58,7 @@ function askForSelect(passwordLength) {
     if (!numbersCh && !lowerCaseCh && !upperCaseCh && !symbolCh) {
 
         alert("please select at least one of these options number/ lowerCase/ upperCase/ symbol  ")
-        askForSelect()
+        askForSelect(passwordLength)
     };
 
     if (numbersCh) {
@@ -97,3 +97,4 @@ function writePassword() {
 }
 
 generateBtn.addEventListener("click", writePassword)
+
