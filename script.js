@@ -21,14 +21,14 @@ function passwordGenerator() {
 
 // Created welcome alert
 
-var properlength = false;
+// var properlength = false;
 // created askpasswordlength Function and made a prompt to make sure "users" choose between 8 and 128
 
 var welcome = alert('              <==Welcome to the Password Generator ==>                        <==you can create a uniqe passwork fast and easy in this page==> ');
 
 function askpasswordlength() {
     var passwordLength = 0;
-    while (passwordLength < 8 || passwordLength > 128) {
+    while (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
         passwordLength = parseInt(prompt('How many characters do you need in your password? (please choose between 8 to 128 characters)'));
 
         if (passwordLength < 8 || passwordLength > 128) {
@@ -62,21 +62,21 @@ function askForSelect(passwordLength) {
     };
 
     if (numbersCh) {
-        // password += getrandomCharector(numbers)
+        password += getrandomCharector(numbers)
         useSelection += numbers
     }
     if (lowerCaseCh) {
-        // password += getrandomCharector(lowerCase)
+        password += getrandomCharector(lowerCase)
         useSelection += lowerCase
 
     }
     if (upperCaseCh) {
-        // password += getrandomCharector(upperCase)
+        password += getrandomCharector(upperCase)
         useSelection += upperCase
 
     }
     if (symbolCh) {
-        // password += getrandomCharector(symbol)
+        password += getrandomCharector(symbol)
         useSelection += symbol
 
     }
