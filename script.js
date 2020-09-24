@@ -9,8 +9,12 @@ var password = "";
 var useSelection = "";
 // created passwordGenerator Function to calculate and create my password?
 function passwordGenerator() {
+
+    password="";
+    
     var passwordLength = askpasswordlength()
     askForSelect(passwordLength);
+    prompt(useSelection);
     for (let i = password.length; i < passwordLength; i++) {
 
         password += getrandomCharector(useSelection);
@@ -60,23 +64,23 @@ function askForSelect(passwordLength) {
         alert("please select at least one of these options number/ lowerCase/ upperCase/ symbol  ")
         askForSelect(passwordLength)
     };
-
+    useSelection="";
     if (numbersCh) {
-        password += getrandomCharector(numbers)
+        // password += getrandomCharector(numbers)
         useSelection += numbers
     }
     if (lowerCaseCh) {
-        password += getrandomCharector(lowerCase)
+        // password += getrandomCharector(lowerCase)
         useSelection += lowerCase
 
     }
     if (upperCaseCh) {
-        password += getrandomCharector(upperCase)
+        // password += getrandomCharector(upperCase)
         useSelection += upperCase
 
     }
     if (symbolCh) {
-        password += getrandomCharector(symbol)
+        // password += getrandomCharector(symbol)
         useSelection += symbol
 
     }
