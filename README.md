@@ -25,19 +25,19 @@ Made a javascript file and made these changes.
 
 •	created a function to keep users on right path and have mutiple choices to creat there unique password
 
- Made a variable for uppercase characters
- Made a variable for lowercase characters
- Made a variable for special characters
- Made a variable for numbers
- Made a variable for password length
- Made a variable to hold all the characters a user chooses
- Made a variable for the final password
- created a loop that will prompt a user to pick a password length between 8 and 128 that is a number
- Created a loop that prompts a user to choose the different character types until they have chosen at least one type of character
- wrote some conditional statements that check to see if a user has chosen each specific character type if they have, add those characters to the variable that holds all the characters a user chooses
- added one of the characters to the final password string
+* Made a variable for uppercase characters
+* Made a variable for lowercase characters
+* Made a variable for special characters
+* Made a variable for numbers
+* Made a variable for password length
+* Made a variable to hold all the characters a user chooses
+* Made a variable for the final password
+* created a loop that will prompt a user to pick a password length between 8 and 128 that is a number
+* Created a loop that prompts a user to choose the different character types until they have chosen at least one type of character
+* wrote some conditional statements that check to see if a user has chosen each specific character type if they have, add those characters to the variable that holds all the characters a user chooses
+* added one of the characters to the final password string
 
-  Added an event listener to the generate button  
+*  Added an event listener to the generate button  
 • Usage: 
 1-	tps://validator.w3.org/  helps to check and fix the HTML fils
 2-	https://www.w3schools.com/ provides prepared executive codes to safe time for coders.
