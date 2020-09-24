@@ -2,7 +2,7 @@
 By Merdad Karkudi
 GitHub repository link; https://github.com/mkarkuody/passwordgenerator
 GitHub active link ; https://mkarkuody.github.io/passwordgenerator/
-Demo Video link ;
+Demo Video link ; https://github.com/mkarkuody/passwordgenerator/blob/master/demo%20Video.mp4
 Started with a HTML file with “Password Generator” title. Header 1 “Password Generator”. Header 2 “Create a Password”. A textarea and a Button named “Generate Password” put css link in head and JavaScript file before body ends. Also a created a css file separately to decorate Those elements.
 Made a javascript file and made these changes.
 •	Added an event listener to generate button
