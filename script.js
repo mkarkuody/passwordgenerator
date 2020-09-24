@@ -1,3 +1,6 @@
+
+// This JS file has been created by Merdad Karkudi
+
 // created Variables and gave them strings, numbers ands Nulls
 var generateBtn = document.querySelector("#generate")
 var symbol = ';!@#$%^&*=+-_)(":;'
@@ -59,28 +62,28 @@ function askForSelect(passwordLength) {
         var symbolCh = confirm('Do you like to have symbol(s) in your password?');
     }
 
-    if (!numbersCh && !lowerCaseCh && !upperCaseCh && !symbolCh) {
+    if (!numbersCh && !lowerCaseCh && !upperCaseCh && !symbolCh ) {
 
         alert("please select at least one of these options number/ lowerCase/ upperCase/ symbol  ")
         askForSelect(passwordLength)
     };
     useSelection="";
     if (numbersCh) {
-        // password += getrandomCharector(numbers)
+        password += getrandomCharector(numbers)
         useSelection += numbers
     }
     if (lowerCaseCh) {
-        // password += getrandomCharector(lowerCase)
+        password += getrandomCharector(lowerCase)
         useSelection += lowerCase
 
     }
     if (upperCaseCh) {
-        // password += getrandomCharector(upperCase)
+        password += getrandomCharector(upperCase)
         useSelection += upperCase
 
     }
     if (symbolCh) {
-        // password += getrandomCharector(symbol)
+        password += getrandomCharector(symbol)
         useSelection += symbol
 
     }
