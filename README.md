@@ -1,4 +1,4 @@
-﻿# passwordgenerator
+# passwordgenerator
 By Merdad Karkudi
 GitHub repository link; https://github.com/mkarkuody/passwordgenerator
 GitHub active link ; https://mkarkuody.github.io/passwordgenerator/
@@ -47,6 +47,7 @@ Got help Online from :
 •	https://www.w3schools.com/  
 •	www.YouTube.com  ( https://www.youtube.com/user/codeandcreative )
  Thanks to John Young my class instructor and Ben Vaagen my TA. special Thank to Dan Mont-Eton my TA , and Amanda Crawford My Tutor for helping me to understand the class and homework contents.
+
 
 
 
